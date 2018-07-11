@@ -3,14 +3,29 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Sherry Lin'
-SITENAME = 'SolringLin'
+SITENAME = 'Solring Lin'
 SITEURL = ''
 
+THEME= '/Users/solring/GitWorkspace/Flex/'
+#THEME= '/Users/solring/GitWorkspace/nest/'
+#THEME= '/Users/solring/GitWorkspace/pelican-clean-blog/'
+
 PATH = 'content'
-
 TIMEZONE = 'Asia/Taipei'
-
 DEFAULT_LANG = 'Chinese (Traditional)'
+
+# Flex configs
+MAIN_MENU = True
+SITETITLE = 'SOLRING LIN'
+SITESUBTITLE = 'Software Developer'
+SITEDESCRIPTION= 'Technical notes and everything.'
+SITELOGO = 'images/profile.jpg'
+#FAVICON = 'images/favicon.ico'
+PYGMENTS_STYLE = 'monokai'
+
+MENUITEMS = (('Archives', '/archives.html'),
+             ('categories', '/categories.html'),
+             ('Tags', '/tags.html'),)
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -19,17 +34,17 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('About', '#'),
+         ('Email', 'sherry12714@gmail.com'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('github', 'http://github.com/solring'),
+          ('linkedin', 'https://www.linkedin.com/in/sherry-lin-73312843/'),
+          ('twitter', 'http://twitter.com/solringlin'),)
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
