@@ -6,7 +6,8 @@ AUTHOR = 'Sherry Lin'
 SITENAME = 'Solring Lin'
 SITEURL = ''
 
-THEME= '/Users/solring/GitWorkspace/Flex/'
+THEME= '../Flex/'
+#THEME= '/Users/solring/GitWorkspace/Flex/'
 #THEME= '/Users/solring/GitWorkspace/nest/'
 #THEME= '/Users/solring/GitWorkspace/pelican-clean-blog/'
 
@@ -17,14 +18,14 @@ DEFAULT_LANG = 'Chinese (Traditional)'
 # Flex configs
 MAIN_MENU = True
 SITETITLE = 'SOLRING LIN'
-SITESUBTITLE = 'Software Developer'
+SITESUBTITLE = 'Software Developer | Technical notes and everything'
 SITEDESCRIPTION= 'Technical notes and everything.'
 SITELOGO = 'images/profile.jpg'
 #FAVICON = 'images/favicon.ico'
 PYGMENTS_STYLE = 'monokai'
 
 MENUITEMS = (('Archives', '/archives.html'),
-             ('categories', '/categories.html'),
+             ('Categories', '/categories.html'),
              ('Tags', '/tags.html'),)
 
 # Feed generation is usually not desired when developing
@@ -36,8 +37,9 @@ AUTHOR_FEED_RSS = None
 
 
 # Blogroll
-LINKS = (('About', '#'),
-         ('Email', 'sherry12714@gmail.com'),)
+LINKS = (('About', '/about.html'),
+         ('Resume', 'https://www.linkedin.com/in/sherry-lin-73312843/'),
+         ('sherry12714@gmail.com', '#'))
 
 # Social widget
 SOCIAL = (('github', 'http://github.com/solring'),
